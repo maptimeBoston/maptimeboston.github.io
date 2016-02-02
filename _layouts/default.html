@@ -26,25 +26,25 @@
   <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
 </head>
 <body>
-  <header class='fill-blue'>
+  <header class='fill-red'>
     <div class='limiter contain'>
       <a href='{{site.baseurl}}/' class='sprite maptime pin-left'>Maptime</a>
       <div class='col12 clearfix pad2y'>
-        <div class='round pad2 col6 margin6 strong dark fill-darken0 fill-chapter row4 truncate contain'>
+        <div class='round pad2 col6 margin6 strong dark fill-darken1 fill-chapter row4 truncate contain'>
           <h1><a class='dark contain z1' href='{{site.baseurl}}/'>{{site.maptime.chapter}}</a></h1>
           <div class='pin-right pad4x pad1y hide-mobile'>
             <span class='sprite marker'></span>
           </div>
-          <a href='https://twitter.com/{{site.maptime.twitter}}/' class='contain z1 fill-blue button'>
+          <a href='https://twitter.com/{{site.maptime.twitter}}/' class='contain z1 fill-red button'>
             @{{site.maptime.twitter}} on Twitter
           </a>
         </div>
       </div>
     </div>
-    <div class='masthead fill-blue'>
-      <div class='fill-darken0 pad1y strong dark'>
+    <div class='masthead fill-red'>
+      <div class='fill-darken1 pad1y strong dark'>
         <div class='limiter'>
-          <a href='{{site.baseurl}}/resources' class='resources'>Resources and Tutorials</a>
+          <a href='{{site.baseurl}}/resources' class='fill-red resources'>Resources and Tutorials</a>
         </div>
       </div>
     </div>
@@ -52,12 +52,12 @@
   <div class='limiter pad4y'>
     <div class='col12 clearfix'>
       <aside class='col3 fr space-bottom2 sidebar'>
-        <div class='fill-purple strong dark round pad2 space-bottom2'>
+        <div class='fill-red strong dark round pad2 space-bottom2'>
           <h3>The next {{site.maptime.chapter}} is:</h3>
           <div id='rsvpdate'></div>
         </div>
 
-        <div class='hide-mobile'>
+        <!--div class='hide-mobile'>
           <div class='popup-group'>
             <a href='https://github.com/maptimeboston/{{site.repo}}/' class='col12 space-bottom2 button'>Watch these events</a>
             <div class='popup popup-big keyline-all pad1 small round'>
@@ -78,7 +78,7 @@
               <a class='small' href='https://github.com/maptimeboston/{{site.repo}}/watchers'>View all</a>
             </div>
           </div>
-        </div>
+        </div-->
       </aside>
 
       <div class='col8 margin2r prose content'>

@@ -5,7 +5,7 @@
 h1 { font-size:32px; line-height:36px; }
 body { color:#404040; }
 
-a       { color:#279acb; }
+a       { color:#B7282C; }
 a:hover { text-decoration:underline; }
 
 .dark a, 
@@ -99,7 +99,6 @@ h6 a:hover { text-decoration:none;}
     .resources{ 
       display: inline-block;
       padding: 10px;
-      background: #2BABE2;
 
     }
 
@@ -118,8 +117,8 @@ a.fill-green:hover    { background-color:#008440; text-decoration:none; }
 a.fill-yellow:hover   { background-color:#e2d61b; text-decoration:none; }
 .fill-orange          { background-color:#f79420; }
 a.fill-orange:hover   { background-color:#de851d; text-decoration:none; }
-.fill-red             { background-color:#ec2127; }
-a.fill-red:hover      { background-color:#d41e23; text-decoration:none; }
+.fill-red             { background-color:#B7282C; }
+a.fill-red:hover      { background-color:#a7181C; text-decoration:none; }
 
 .fill-darken0         { background-color:rgba(0,0,0,0.10); }
 a.fill-darken0:hover  { background-color:rgba(0,0,0,0.15); }
