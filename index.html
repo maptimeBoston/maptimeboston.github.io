@@ -9,10 +9,10 @@ layout: default
     {{item.content}}
     <div class='keyline-all round pad2 col12 clearfix'>
       <div class='col8 pad0y'>
-        Join us: <span class='quiet'>{{item.date | date:"%A, %b %d %Y"}}</span>
+        <span class='quiet'>{{item.date | date:"%A, %b %d %Y"}}</span>
       </div>
       <div class='col4'>
-        <a class='button fill-orange block' href='{{item.rsvp}}'>RSVP</a>
+        <a class='button fill-orange block' href='{{item.rsvp}}'>Meetup event</a>
       </div>
     </div>
   {% else %}

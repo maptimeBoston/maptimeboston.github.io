@@ -83,7 +83,7 @@ h6 a:hover { text-decoration:none;}
     background-position:0 0;
     width:385px;
     height:140px;
-    top:-10px;
+    top:0;
     }
   .sprite.marker {
     background-position:-385px 0;
@@ -94,6 +94,13 @@ h6 a:hover { text-decoration:none;}
     background-position:-485px -100px;
     width:140px;
     height:40px;
+    }
+
+    .resources{ 
+      display: inline-block;
+      padding: 10px;
+      background: #2BABE2;
+
     }
 
 .rcon.right-arrow:after, .icon.right-arrow:before { background-position:-485px 0; }
