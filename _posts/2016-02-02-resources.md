@@ -28,3 +28,5 @@ Many of the topics we've covered at Maptime Boston have repositories on out GitH
 **[Migrating to Leaflet 1.0](https://github.com/maptimeBoston/MapTime-Migrating-To-Leaflet-1.0)** by Ryan Mullins
 
 **[Mapping with R](https://github.com/kent37/Maptime-Mapping-with-R)** by Kent Johnson
+
+**[Intro to PostGIS](http://www.postgis.us/presentations/maptime2016.html#/)** by Regina Obe and Leo Hsu
