@@ -30,3 +30,9 @@ Many of the topics we've covered at Maptime Boston have repositories on out GitH
 **[Mapping with R](https://github.com/kent37/Maptime-Mapping-with-R)** by Kent Johnson
 
 **[Intro to PostGIS](http://www.postgis.us/presentations/maptime2016.html#/)** by Regina Obe and Leo Hsu
+
+**[Map Design](https://github.com/maptimeBoston/cartographic-design)** by Mike Foster and Andy Woodruff
+
+**[Geospatial Processing with Python](http://jwass.github.io/maptime-boston-python/slides/)** by Jake Wasserman
+
+**[Geoprocessing with turf.js](https://wboykinm.github.io/maptime-turfjs/)** by Bill Morris
