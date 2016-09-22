@@ -36,3 +36,5 @@ Many of the topics we've covered at Maptime Boston have repositories on out GitH
 **[Geospatial Processing with Python](http://jwass.github.io/maptime-boston-python/slides/)** by Jake Wasserman
 
 **[Geoprocessing with turf.js](https://wboykinm.github.io/maptime-turfjs/)** by Bill Morris
+
+**[Geospatial Processing with Julia](https://yeesian.github.io/maptime-boston-julia/)** by Yeesian Ng
