@@ -1,0 +1,28 @@
+.geoweek h2 {
+    font-size: 1.25em;
+    background-color: #891e21;
+    padding: 0 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.geoweek h2 span {
+    float: right;
+    font-weight: normal
+}
+
+.geoweek time {
+    background-color: #891e21;
+    padding: .25em .5em;
+    color: white;
+    font-family: monospace;
+    border-radius: 10px;
+}
+
+.geoweek ul {
+    margin-bottom: 1em;
+}
+
+.geoweek ul li {
+    margin-bottom: unset;
+}

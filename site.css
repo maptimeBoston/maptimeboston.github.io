@@ -212,3 +212,5 @@ a.fill-darken0:hover  { background-color:rgba(0,0,0,0.15); }
   .sidebar { padding:0; }
   header .limiter { padding:120px 0 0; }
 }
+
+{% include geoweek.css %}
