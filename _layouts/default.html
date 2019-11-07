@@ -52,10 +52,8 @@
   <div class='limiter pad4y'>
     <div class='col12 clearfix'>
       <aside class='col3 fr space-bottom2 sidebar'>
-        <div class='fill-red strong dark round pad2 space-bottom2'>
-          <h3>The next {{site.maptime.chapter}} is:</h3>
-          <div id='rsvpdate'></div>
-        </div>
+        <h3>Upcoming {{site.maptime.chapter}} events:</h3>
+        <div id='rsvpdate'></div>
 
         <!--div class='hide-mobile'>
           <div class='popup-group'>
@@ -97,20 +95,24 @@
 <script src='{{site.baseurl}}/js/underscore.min.js'></script>
 <script src='{{site.baseurl}}/site.js'></script>
 <script>
-  var rsvp = document.getElementById('rsvpdate');
-  var date,formatted,link;
-  '{% for item in site.categories.event limit:1 %}'
-    date = '{{item.date}}';
-    formatted = '{{item.date | date:"%A, %b %d %Y"}}';
-    link = '{{item.rsvp}}';
-  '{% endfor %}'
-
-  if (date && new Date() < new Date(date)) {
-    rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
-    '<a class="button fill-orange block" href=' + link + '>RSVP</a>';
-  } else {
-    rsvp.innerHTML = '<h3>TBA</h3>';
-  }
+var $rsvps = $('#rsvpdate');
+// replace manual with automated next meetup feed
+$.ajax('https://cors-anywhere.herokuapp.com/https://www.meetup.com/Maptime-Boston/events/rss/').success(function (data) {
+    
+    if (!$(data).find("item").length) {
+      $rsvps.append(`<div class='space-bottom2'>
+          <strong>TBD</strong>
+        </div>`)
+    } else {
+      $(data).find("item").each(function () { // or "item" or whatever suits your feed
+        var el = $(this);
+        var event = `<div class='maptime-event fill-red dark round pad2 space-bottom2'>
+          <strong><a href="${el.find("guid").text()}">${el.find("title").text()}</a></strong>
+        </div>`;
+        $rsvps.append(event)
+      });
+    }
+})
 </script>
 
 </body>
